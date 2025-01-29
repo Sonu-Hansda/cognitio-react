@@ -63,7 +63,7 @@ const Contact = () => {
         </div>
 
         <footer className="mt-12 pt-8 border-t border-gray-800 text-center text-gray-400">
-          <p>&copy; 2024 Cognitio. All rights reserved.</p>
+          <p>&copy; 2025 Cognitio. All rights reserved.</p>
         </footer>
       </div>
     </section>

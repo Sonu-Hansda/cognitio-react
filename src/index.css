@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 .clip-path-curve {
     clip-path: ellipse(150% 100% at 50% 100%);
   }

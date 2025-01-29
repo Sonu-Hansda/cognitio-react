@@ -1,9 +1,12 @@
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 
 const Navbar = ({ logo }) => {
     const [isOpen, setIsOpen] = useState(false);
-    const menuItems = ['About', 'Events', 'Register'];
-
+    const menuItems = [
+        { name: 'about', url: '#about' },
+        { name: 'events', url: '#events' },
+        { name: 'register', url: '#register' },
+    ];
 
     return (
         <nav className={`sticky top-0 z-50 transition-all duration-300 bg-transparent`}>
@@ -16,10 +19,13 @@ const Navbar = ({ logo }) => {
 
                 <ul className='hidden md:flex gap-6 md:gap-12 text-gray-300'>
                     {menuItems.map((item) => (
-                        <li key={item} className="group relative">
-                            <button className="text-sm md:text-base font-medium hover:text-indigo-400 transition-colors">
-                                {item}
-                            </button>
+                        <li key={item.name} className="group relative">
+                            <a
+                                href={item.url}
+                                className="text-sm md:text-base font-medium hover:text-indigo-400 transition-colors"
+                            >
+                                {item.name}
+                            </a>
                             <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-400 group-hover:w-full transition-all duration-300" />
                         </li>
                     ))}
@@ -28,6 +34,7 @@ const Navbar = ({ logo }) => {
                 <button
                     className="md:hidden text-gray-300 hover:text-indigo-400 focus:outline-none"
                     onClick={() => setIsOpen(!isOpen)}
+                    aria-label="Toggle menu"
                 >
                     <svg
                         className="h-8 w-8"
@@ -57,13 +64,14 @@ const Navbar = ({ logo }) => {
                     <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-sm py-4 px-6">
                         <ul className="flex flex-col gap-4">
                             {menuItems.map((item) => (
-                                <li key={item} className="group">
-                                    <button
+                                <li key={item.name} className="group">
+                                    <a
                                         className="w-full text-left text-gray-300 text-lg font-medium hover:text-indigo-400 transition-colors py-3 border-b border-gray-800"
                                         onClick={() => setIsOpen(false)}
+                                        href={item.url}
                                     >
-                                        {item}
-                                    </button>
+                                        {item.name}
+                                    </a>
                                 </li>
                             ))}
                         </ul>
