@@ -6,8 +6,30 @@ html {
 
 .clip-path-curve {
     clip-path: ellipse(150% 100% at 50% 100%);
-  }
-  
-  .transition-all {
+}
+
+.transition-all {
     transition: all 0.3s ease;
-  }
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #4F46E5;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #3b3f7a;
+}
+
+.scrollbar {
+    scrollbar-width: thin;
+    scrollbar-color: #4F46E5 rgba(255, 255, 255, 0.1);
+}

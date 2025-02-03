@@ -1,38 +1,39 @@
 import { useState } from 'react';
 
-const Navbar = ({ logo }) => {
+const Navbar = ({ logo, onRegisterClick }) => {
     const [isOpen, setIsOpen] = useState(false);
     const menuItems = [
         { name: 'about', url: '#about' },
         { name: 'events', url: '#events' },
-        { name: 'register', url: '#register' },
+        { name: 'register', url: '#register', action: onRegisterClick },
     ];
 
     return (
-        <nav className={`sticky top-0 z-50 transition-all duration-300 bg-transparent`}>
+        <nav className={`sticky top-0 z-50 transition-all duration-300`}>
             <div className='container mx-auto flex items-center justify-between px-6 py-4 md:px-12 lg:px-24'>
                 <img
-                    className='h-12 md:h-16 transition-transform hover:scale-105'
+                    className='h-12 md:h-16 transition-transform hover:scale-110'
                     src={logo}
                     alt="Cognitio Logo"
                 />
 
-                <ul className='hidden md:flex gap-6 md:gap-12 text-gray-300'>
+                <ul className='hidden md:flex gap-6 md:gap-12 text-white'>
                     {menuItems.map((item) => (
                         <li key={item.name} className="group relative">
                             <a
                                 href={item.url}
-                                className="text-sm md:text-base font-medium hover:text-indigo-400 transition-colors"
+                                onClick={item.action}
+                                className="text-sm md:text-base font-medium hover:text-yellow-300 transition-colors"
                             >
                                 {item.name}
                             </a>
-                            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-indigo-400 group-hover:w-full transition-all duration-300" />
+                            <div className="absolute bottom-0 left-0 w-0 h-0.5 bg-yellow-300 group-hover:w-full transition-all duration-300" />
                         </li>
                     ))}
                 </ul>
 
                 <button
-                    className="md:hidden text-gray-300 hover:text-indigo-400 focus:outline-none"
+                    className="md:hidden text-white hover:text-yellow-300 focus:outline-none"
                     onClick={() => setIsOpen(!isOpen)}
                     aria-label="Toggle menu"
                 >
@@ -61,13 +62,16 @@ const Navbar = ({ logo }) => {
                 </button>
 
                 {isOpen && (
-                    <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-sm py-4 px-6">
+                    <div className="md:hidden absolute top-full left-0 w-full bg-black/95 backdrop-blur-sm py-4 px-6 transition-all duration-300 ease-in-out">
                         <ul className="flex flex-col gap-4">
                             {menuItems.map((item) => (
                                 <li key={item.name} className="group">
                                     <a
-                                        className="w-full text-left text-gray-300 text-lg font-medium hover:text-indigo-400 transition-colors py-3 border-b border-gray-800"
-                                        onClick={() => setIsOpen(false)}
+                                        className="w-full text-left text-white text-lg font-medium hover:text-yellow-300 transition-colors py-3 border-b border-gray-800"
+                                        onClick={() => {
+                                            setIsOpen(false);
+                                            if (item.action) item.action();
+                                        }}
                                         href={item.url}
                                     >
                                         {item.name}

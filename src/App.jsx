@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import Waves from "./components/Waves";
 import logo from "./assets/imgs/images/Cognitio logo (1).webp";
 import MouseScrollAnimation from "./components/MouseScrollAnimation";
@@ -6,8 +7,20 @@ import About from "./components/About";
 import EventsSection from "./components/Events";
 import Gallery from "./components/Gallery";
 import Contact from "./components/Contact";
+import Register from "./components/Register";
+import Modal from "./components/Modal";
 
 function App() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleRegisterClick = () => {
+    setIsModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setIsModalOpen(false);
+  };
+
   return (
     <main className='bg-black min-h-screen relative overflow-hidden'>
       <div className='absolute inset-0 z-0'>
@@ -31,8 +44,8 @@ function App() {
       </div>
 
       <section className='relative z-20'>
-        <Navbar logo={logo} />
-        <div className='flex flex-col items-center justify-center min-h-[80vh] text-center px-4'>
+        <Navbar logo={logo} onRegisterClick={handleRegisterClick} />
+        <div className='flex flex-col items-center justify-center min-h-screen text-center px-4'>
           <img
             className='h-48 md:h-64 mb-12 opacity-90 hover:opacity-100 transition-opacity'
             src={logo}
@@ -40,7 +53,7 @@ function App() {
           />
 
           <div className='space-y-8'>
-            <button className='bg-indigo-600 text-white px-8 py-4 rounded-2xl text-lg font-semibold hover:bg-indigo-700 transition-colors shadow-lg hover:shadow-indigo-500/30'>
+            <button className='bg-indigo-600 text-white px-8 py-3.5 rounded-2xl text-lg font-semibold hover:-translate-y-2 transition-transform shadow-lg cursor-pointer' onClick={handleRegisterClick}>
               Register Now
             </button>
 
@@ -52,12 +65,16 @@ function App() {
               />
             </div>
           </div>
+          <About />
+          <EventsSection />
+          <Gallery />
         </div>
-        <About/>
-        <EventsSection/>
-        <Gallery/>
         <Contact/>
       </section>
+
+      <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
+        <Register />
+      </Modal>
     </main>
   );
 }

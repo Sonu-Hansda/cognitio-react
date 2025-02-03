@@ -1,134 +1,218 @@
 import React, { useState } from "react";
-import { motion } from "framer-motion";
 
 const Register = () => {
-    const [isOpen, setIsOpen] = useState(false);
+    const [formData, setFormData] = useState({
+        firstName: "",
+        lastName: "",
+        registrationNumber: "",
+        email: "",
+        branch: "",
+        events: [],
+        paymentReceipt: "",
+    });
 
-    const toggleModal = () => setIsOpen(!isOpen);
-  
+    const [errors, setErrors] = useState({});
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setFormData({
+            ...formData,
+            [name]: value,
+        });
+        if (errors[name]) {
+            setErrors({ ...errors, [name]: "" });
+        }
+    };
+
+    const handleCheckboxChange = (e) => {
+        const { value, checked } = e.target;
+        setFormData((prevData) => {
+            const events = checked
+                ? [...prevData.events, value]
+                : prevData.events.filter((event) => event !== value);
+            return { ...prevData, events };
+        });
+    };
+
+    const validateForm = () => {
+        const newErrors = {};
+        if (!formData.firstName.trim()) newErrors.firstName = "First Name is required";
+        if (!formData.lastName.trim()) newErrors.lastName = "Last Name is required";
+        if (!formData.registrationNumber.trim())
+            newErrors.registrationNumber = "Registration Number is required";
+        if (!formData.email.trim()) newErrors.email = "Email is required";
+        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email))
+            newErrors.email = "Invalid email address";
+        if (!formData.branch) newErrors.branch = "Branch is required";
+        if (formData.events.length === 0) newErrors.events = "Select at least one event";
+        if (!formData.paymentReceipt.trim())
+            newErrors.paymentReceipt = "Payment Receipt Number is required";
+
+        setErrors(newErrors);
+        return Object.keys(newErrors).length === 0;
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (validateForm()) {
+            console.log("Form Data:", formData);
+            alert("Registration Successful!");
+            setFormData({
+                firstName: "",
+                lastName: "",
+                registrationNumber: "",
+                email: "",
+                branch: "",
+                events: [],
+                paymentReceipt: "",
+            });
+        }
+    };
+
     return (
-      <>
-        <button
-          onClick={toggleModal}
-          className="mb-4 px-4 py-2 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 focus:outline-none"
-        >
-          Open Registration Form
-        </button>
-  
-        {isOpen && (
-          <motion.div
-            className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            onClick={toggleModal}
-          >
-            <div
-              onClick={(e) => e.stopPropagation()}
-              className="bg-white bg-opacity-30 backdrop-blur-md p-6 rounded-2xl w-11/12 max-w-2xl shadow-2xl"
-            >
-              <h2 className="text-2xl font-bold text-center mb-6">Registration Form</h2>
-              <form className="space-y-4">
+        <div className="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-lg">
+            <h2 className="text-2xl font-bold mb-6 text-center text-indigo-600">
+                Register for Events
+            </h2>
+            <form onSubmit={handleSubmit} className="space-y-4">
                 <div>
-                  <label className="block font-medium mb-1">Name</label>
-                  <input
-                    type="text"
-                    placeholder="Enter your name"
-                    className="w-full p-2 border rounded-lg bg-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  />
+                    <label className="block text-sm font-medium text-gray-700">First Name</label>
+                    <input
+                        type="text"
+                        name="firstName"
+                        placeholder="First Name"
+                        value={formData.firstName}
+                        onChange={handleChange}
+                        className={`w-full p-2 border ${
+                            errors.firstName ? "border-red-500" : "border-gray-300"
+                        } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+                    />
+                    {errors.firstName && (
+                        <p className="text-red-500 text-sm mt-1">{errors.firstName}</p>
+                    )}
                 </div>
-  
+
                 <div>
-                  <label className="block font-medium mb-1">Registration Number</label>
-                  <input
-                    type="text"
-                    placeholder="Enter your registration number"
-                    className="w-full p-2 border rounded-lg bg-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  />
+                    <label className="block text-sm font-medium text-gray-700">Last Name</label>
+                    <input
+                        type="text"
+                        name="lastName"
+                        placeholder="Last Name"
+                        value={formData.lastName}
+                        onChange={handleChange}
+                        className={`w-full p-2 border ${
+                            errors.lastName ? "border-red-500" : "border-gray-300"
+                        } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+                    />
+                    {errors.lastName && (
+                        <p className="text-red-500 text-sm mt-1">{errors.lastName}</p>
+                    )}
                 </div>
-  
+
                 <div>
-                  <label className="block font-medium mb-1">Email</label>
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="w-full p-2 border rounded-lg bg-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  />
-                </div>
-  
-                <div>
-                  <label className="block font-medium mb-1">Batch</label>
-                  <input
-                    type="text"
-                    placeholder="Enter your batch"
-                    className="w-full p-2 border rounded-lg bg-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  />
-                </div>
-  
-                <div>
-                  <label className="block font-medium mb-1">College/School/Organisation</label>
-                  <input
-                    type="text"
-                    placeholder="Enter your institution name"
-                    className="w-full p-2 border rounded-lg bg-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  />
-                </div>
-  
-                <div>
-                  <label className="block font-medium mb-1">WhatsApp Number</label>
-                  <input
-                    type="tel"
-                    placeholder="Enter your WhatsApp number"
-                    className="w-full p-2 border rounded-lg bg-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  />
-                </div>
-  
-                <div>
-                  <label className="block font-medium mb-1">Transaction ID</label>
-                  <input
-                    type="text"
-                    placeholder="Enter your transaction ID"
-                    className="w-full p-2 border rounded-lg bg-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  />
-                </div>
-  
-                <div>
-                  <label className="block font-medium mb-1">Branch</label>
-                  <select
-                    className="w-full p-2 border rounded-lg bg-white/70 focus:outline-none focus:ring-2 focus:ring-blue-400"
-                  >
-                    <option value="CSE">CSE</option>
-                    <option value="EE">EE</option>
-                    <option value="ECE">ECE</option>
-                  </select>
-                </div>
-  
-                <div>
-                  <label className="block font-medium mb-1">Choose Events</label>
-                  <div className="space-y-2">
-                    <label className="flex items-center">
-                      <input type="checkbox" className="mr-2" /> Event 1
+                    <label className="block text-sm font-medium text-gray-700">
+                        Registration Number
                     </label>
-                    <label className="flex items-center">
-                      <input type="checkbox" className="mr-2" /> Event 2
-                    </label>
-                    <label className="flex items-center">
-                      <input type="checkbox" className="mr-2" /> Event 3
-                    </label>
-                  </div>
+                    <input
+                        type="text"
+                        name="registrationNumber"
+                        placeholder="Registration Number"
+                        value={formData.registrationNumber}
+                        onChange={handleChange}
+                        className={`w-full p-2 border ${
+                            errors.registrationNumber ? "border-red-500" : "border-gray-300"
+                        } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+                    />
+                    {errors.registrationNumber && (
+                        <p className="text-red-500 text-sm mt-1">{errors.registrationNumber}</p>
+                    )}
                 </div>
-  
+
+                <div>
+                    <label className="block text-sm font-medium text-gray-700">Email Address</label>
+                    <input
+                        type="email"
+                        name="email"
+                        placeholder="Email Address"
+                        value={formData.email}
+                        onChange={handleChange}
+                        className={`w-full p-2 border ${
+                            errors.email ? "border-red-500" : "border-gray-300"
+                        } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+                    />
+                    {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
+                </div>
+
+                <div>
+                    <label className="block text-sm font-medium text-gray-700">Branch</label>
+                    <select
+                        name="branch"
+                        value={formData.branch}
+                        onChange={handleChange}
+                        className={`w-full p-2 border ${
+                            errors.branch ? "border-red-500" : "border-gray-300"
+                        } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+                    >
+                        <option value="">Select Branch</option>
+                        <option value="ME">Mechanical Engineering</option>
+                        <option value="ECM">Engineering & Computational Engineering</option>
+                        <option value="CSE">Computer Science & Engineering</option>
+                        <option value="EE">Electrical Engineering</option>
+                        <option value="ECE">Electronics & Communication Engineering</option>
+                        <option value="PIE">Production & Industrial Engineering</option>
+                        <option value="META">Metallurgical & Materials Science Engineering</option>
+                        <option value="CE">Civil Engineering</option>
+                    </select>
+                    {errors.branch && <p className="text-red-500 text-sm mt-1">{errors.branch}</p>}
+                </div>
+
+                <div>
+                    <h3 className="block text-sm font-medium text-gray-700 mb-2">Select Events:</h3>
+                    <div className="space-y-2">
+                        {["Elevator Pitch","Quriosity", "Assemblage", "Radiation","PLACE STATION","CONUNDRUM","CANSYS","ASSEMBLAGE","DICTUM SYMPOSIUM","SHOOT at SIGHT"].map((event) => (
+                            <label key={event} className="flex items-center space-x-2">
+                                <input
+                                    type="checkbox"
+                                    value={event}
+                                    checked={formData.events.includes(event)}
+                                    onChange={handleCheckboxChange}
+                                    className="w-4 h-4 text-indigo-600 border-gray-300 rounded focus:ring-indigo-500"
+                                />
+                                <span>{event}</span>
+                            </label>
+                        ))}
+                    </div>
+                    {errors.events && <p className="text-red-500 text-sm mt-1">{errors.events}</p>}
+                </div>
+
+                <div>
+                    <label className="block text-sm font-medium text-gray-700">
+                        Payment Receipt Number
+                    </label>
+                    <input
+                        type="text"
+                        name="paymentReceipt"
+                        placeholder="Payment Receipt Number"
+                        value={formData.paymentReceipt}
+                        onChange={handleChange}
+                        className={`w-full p-2 border ${
+                            errors.paymentReceipt ? "border-red-500" : "border-gray-300"
+                        } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+                    />
+                    {errors.paymentReceipt && (
+                        <p className="text-red-500 text-sm mt-1">{errors.paymentReceipt}</p>
+                    )}
+                </div>
+
                 <button
-                  type="submit"
-                  className="w-full px-4 py-2 bg-blue-500 text-white rounded-lg shadow-lg hover:bg-blue-600 focus:outline-none"
+                    type="submit"
+                    className="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition focus:outline-none focus:ring-2 focus:ring-indigo-500"
                 >
-                  Register
+                    Register
                 </button>
-              </form>
-            </div>
-          </motion.div>
-        )}
-      </>
+            </form>
+        </div>
     );
-  };
+};
+
 export default Register;
