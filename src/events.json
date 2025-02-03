@@ -87,56 +87,6 @@
     "name": "PLACE STATION",
     "img": "/events/place-station.webp"
   },
-  "conundrum": {
-    "desc": "With the advent of Make in India, industries are transforming to a new generation. This advancement demands the engineers to showcase their skills and prove their mettle. Deep insights of engineering concepts/principles create an incision on our mind. The CONUNDRUM deals with understanding of core mechanical and manufacturing discipline with primary focus on expertise in problem solving, technical terms and ability to explain what you perceive. Let your grey cells encounter this mechanical CONUNDRUM",
-    "details1": [
-      "Students will participate individually.",
-      "The year and class of study of students will be taken into consideration."
-    ],
-    "details2": [
-      {
-        "heading": "Round 1",
-        "points": [
-          "MCQs, MSQs and Subjective questions to check the engineering aptitude and critical thinking of the participants on core subjects"
-        ]
-      },
-      {
-        "heading": "Round 2",
-        "points": ["Personal Interview (Technical)."]
-      }
-    ],
-    "eh": [
-      "Prashant Kumar:9801975365",
-      "Navneet Kumar:9973129682",
-      "Jyoti Kumari:6205729896"
-    ],
-    "prize": "4500",
-    "name": "CONUNDRUM",
-    "img": "/events/conundrum.webp"
-  },
-  "cansys": {
-    "desc": "Design skills leads to augmentation of visualization and multi-dimension quality check of models supported by detailed analysis reports. Designing and analysis of structural and mechanical components gives a fair idea of feasibility of dimension and geometry for the optimum operation output of the model. This event deals with modeling and simulation of part body in CATIA/Solidworks backed by its analysis using ANSYS.",
-    "details1": [
-      "Number of students in a team: 2",
-      "Teams must bring their own laptops with chargers and extension cords."
-    ],
-    "details2": [
-      {
-        "heading": "Round 1",
-        "points": ["3-D part modelling and drafting in CATIA/Solidworks."]
-      },
-      {
-        "heading": "Round 2",
-        "points": [
-          "3-D part modelling and assembling in CATIA/Solidworks and analysis of designed model in ANSYS."
-        ]
-      }
-    ],
-    "eh": ["Mrinal Bharadwaj:9471324640", "Arun Yadav:7267037731"],
-    "prize": "5500",
-    "name": "CANSYS",
-    "img": "/events/cansys.webp"
-  },
   "assemblage": {
     "desc": "Strength of mechanical models and engineering structures is an important area of study and experimentation. Concept and principles dealing with truss systems, beam loadings, stress-strain calculation and representation are imperative for evaluating the failure point of structures. Also, the knowledge of material science and vibration is essential to understand the mechanical behaviors and dynamics of system under consideration. This event deals with fabrication of a bridge model and its strength testing using varied type of loads.",
     "details1": [
@@ -194,36 +144,6 @@
     "prize": "4500",
     "name": "DICTUM SYMPOSIUM",
     "img": "/events/dictum-symposium.webp"
-  },
-  "radiation": {
-    "desc": "Mechanical engineering deals with making of machines that makes our life easier. The current era is all about creating technology that are highly efficient in solving our problems and are also environment friendly. Intensified theoretical study followed by feasibility analysis on practical grounds is essential to come up with appropriate suggestions and solutions for complex issues. The event deals with study of prescribed topics and communication of the ideas to the judging panel through Research Paper presentation.",
-    "details1": [
-      "Number of students in a team: 2",
-      "Teams have to choose a particular topic from the list of topics and elaborate how that topic is going to make our lives easier.",
-      "A research paper template will be provided to the students for round 2"
-    ],
-    "details2": [
-      {
-        "heading": "Round 1",
-        "points": [
-          "Abstract submission describing your study on one of the prescribed topics. Word limit for the same is 200- 250 words. Strictly adhere to the word limit. Abstract should comprise of the following details: Team name, Team members’ name, Institute name (school name in case of school students) & roll no."
-        ]
-      },
-      {
-        "heading": "Round 2",
-        "points": [
-          "Selected students will have to give research paper presentation on their topic."
-        ]
-      }
-    ],
-    "eh": [
-      "Gourav Kumar:9123299859",
-      "Vandana Pussam:7692822080",
-      "Avnish Roy:7668258956"
-    ],
-    "prize": "6000",
-    "name": "RADIATION",
-    "img": "/events/radiation.webp"
   },
   "sas": {
     "desc": "Propulsion systems are highly powerful driving technologies enabling the physical essence of distant places. The event deals with water propulsion system in rocket technology resulting in a working prototype showcasing the application of physical concepts. Put all your concepts of kinematics, aerodynamics & hydraulics to build a Water Rocket that covers the maximum range.",
