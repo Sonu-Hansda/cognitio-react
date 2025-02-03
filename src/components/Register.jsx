@@ -45,7 +45,7 @@ const Register = () => {
             newErrors.email = "Invalid email address";
         if (!formData.branch) newErrors.branch = "Branch is required";
         if (formData.events.length === 0) newErrors.events = "Select at least one event";
-    
+
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
@@ -81,9 +81,8 @@ const Register = () => {
                         placeholder="First Name"
                         value={formData.firstName}
                         onChange={handleChange}
-                        className={`w-full p-2 border ${
-                            errors.firstName ? "border-red-500" : "border-gray-300"
-                        } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+                        className={`w-full p-2 border ${errors.firstName ? "border-red-500" : "border-gray-300"
+                            } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
                     />
                     {errors.firstName && (
                         <p className="text-red-500 text-sm mt-1">{errors.firstName}</p>
@@ -98,9 +97,8 @@ const Register = () => {
                         placeholder="Last Name"
                         value={formData.lastName}
                         onChange={handleChange}
-                        className={`w-full p-2 border ${
-                            errors.lastName ? "border-red-500" : "border-gray-300"
-                        } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+                        className={`w-full p-2 border ${errors.lastName ? "border-red-500" : "border-gray-300"
+                            } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
                     />
                     {errors.lastName && (
                         <p className="text-red-500 text-sm mt-1">{errors.lastName}</p>
@@ -117,9 +115,8 @@ const Register = () => {
                         placeholder="Registration Number"
                         value={formData.registrationNumber}
                         onChange={handleChange}
-                        className={`w-full p-2 border ${
-                            errors.registrationNumber ? "border-red-500" : "border-gray-300"
-                        } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+                        className={`w-full p-2 border ${errors.registrationNumber ? "border-red-500" : "border-gray-300"
+                            } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
                     />
                     {errors.registrationNumber && (
                         <p className="text-red-500 text-sm mt-1">{errors.registrationNumber}</p>
@@ -134,9 +131,8 @@ const Register = () => {
                         placeholder="Email Address"
                         value={formData.email}
                         onChange={handleChange}
-                        className={`w-full p-2 border ${
-                            errors.email ? "border-red-500" : "border-gray-300"
-                        } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+                        className={`w-full p-2 border ${errors.email ? "border-red-500" : "border-gray-300"
+                            } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
                     />
                     {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
                 </div>
@@ -147,9 +143,8 @@ const Register = () => {
                         name="branch"
                         value={formData.branch}
                         onChange={handleChange}
-                        className={`w-full p-2 border ${
-                            errors.branch ? "border-red-500" : "border-gray-300"
-                        } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+                        className={`w-full p-2 border ${errors.branch ? "border-red-500" : "border-gray-300"
+                            } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
                     >
                         <option value="">Select Branch</option>
                         <option value="ME">Mechanical Engineering</option>
@@ -167,7 +162,7 @@ const Register = () => {
                 <div>
                     <h3 className="block text-sm font-medium text-gray-700 mb-2">Select Events:</h3>
                     <div className="space-y-2">
-                        {["Elevator Pitch","Quriosity", "Assemblage", "Radiation","PLACE STATION","CONUNDRUM","CANSYS","ASSEMBLAGE","DICTUM SYMPOSIUM","SHOOT at SIGHT"].map((event) => (
+                        {["Elevator Pitch", "Quriosity", "Assemblage", "PLACE STATION", "ASSEMBLAGE", "DICTUM SYMPOSIUM", "SHOOT at SIGHT"].map((event) => (
                             <label key={event} className="flex items-center space-x-2">
                                 <input
                                     type="checkbox"
@@ -193,9 +188,8 @@ const Register = () => {
                         placeholder="Payment Receipt Number"
                         value={formData.paymentReceipt}
                         onChange={handleChange}
-                        className={`w-full p-2 border ${
-                            errors.paymentReceipt ? "border-red-500" : "border-gray-300"
-                        } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+                        className={`w-full p-2 border ${errors.paymentReceipt ? "border-red-500" : "border-gray-300"
+                            } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
                     />
                     {errors.paymentReceipt && (
                         <p className="text-red-500 text-sm mt-1">{errors.paymentReceipt}</p>
