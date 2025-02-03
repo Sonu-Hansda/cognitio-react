@@ -45,9 +45,7 @@ const Register = () => {
             newErrors.email = "Invalid email address";
         if (!formData.branch) newErrors.branch = "Branch is required";
         if (formData.events.length === 0) newErrors.events = "Select at least one event";
-        if (!formData.paymentReceipt.trim())
-            newErrors.paymentReceipt = "Payment Receipt Number is required";
-
+    
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };

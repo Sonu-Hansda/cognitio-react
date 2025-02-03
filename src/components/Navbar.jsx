@@ -3,9 +3,9 @@ import { useState } from 'react';
 const Navbar = ({ logo, onRegisterClick }) => {
     const [isOpen, setIsOpen] = useState(false);
     const menuItems = [
-        { name: 'about', url: '#about' },
-        { name: 'events', url: '#events' },
-        { name: 'register', url: '#register', action: onRegisterClick },
+        { name: 'About', url: '#about' },
+        { name: 'Events', url: '#events' },
+        { name: 'Register', url: '#register', action: onRegisterClick },
     ];
 
     return (
