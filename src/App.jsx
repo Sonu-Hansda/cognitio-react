@@ -45,7 +45,7 @@ function App() {
 
       <section className='relative z-20'>
         <Navbar logo={logo} onRegisterClick={handleRegisterClick} />
-        <div className='flex flex-col items-center justify-center min-h-screen text-center px-4'>
+        <div className='flex flex-col items-center justify-center min-h-screen text-center px-0 md:px-4'>
           <img
             className='h-48 md:h-64 mb-12 opacity-90 hover:opacity-100 transition-opacity'
             src={logo}
