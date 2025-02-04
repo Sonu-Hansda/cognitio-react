@@ -5,6 +5,7 @@ const Navbar = ({ logo, onRegisterClick }) => {
     const menuItems = [
         { name: 'About', url: '#about' },
         { name: 'Events', url: '#events' },
+        { name: 'Gallery', url: '#gallery' },
         { name: 'Register', url: '#register', action: onRegisterClick },
     ];
 

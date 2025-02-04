@@ -25,10 +25,10 @@ const Event = ({ id }) => {
 
     return (
         <div className="event-card bg-white shadow-lg rounded-lg p-4 m-4 h-64 flex flex-col justify-between">
-            <img src={event.img} alt={event.name} />
+            <img className='rounded-xl' src={event.img} alt={event.name} />
             <button
                 onClick={handleLearnMoreClick}
-                className="mt-4 bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition"
+                className="mt-4 bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700 transition cursor-pointer"
             >
                 Learn More
             </button>
