@@ -4,7 +4,7 @@ import EventList from "../assets/imgs/images/Event-List .webp";
 
 function About() {
   return (
-    <section id="about" className='bg-white py-24 rounded-t-2xl'>
+    <section id="about" className='w-full bg-white py-16 rounded-t-2xl'>
       <div className='max-w-7xl mx-auto px-6 lg:px-8'>
         <div className='text-center mb-16'>
           <h1 className='text-4xl font-bold text-gray-900 mb-4'>
