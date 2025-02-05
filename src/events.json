@@ -1,16 +1,16 @@
 {
   "ep": {
-    "desc": "COGNITIO’24 brings a unique opportunity to test your mettle in form of ELEVATOR PITCH. In this event, the participants must present their unique startup idea. Ideas can be from any sector. Overall, you must present B-PLAN for your startup. This must include Market Research, Competitor analysis, USP, Revenue model, Investments Required and Marketing Strategy. Students will be judged on above parameters. Apart from these one may include points that seem relevant to the B-PLAN.",
+    "desc": "COGNITIO'25 presents an exciting opportunity to test your mettle through the ELEVATOR PITCH event. Participants will present their unique ideas upon Protoverse and showcase a comprehensive B-PLAN. This plan should include market research, competitor analysis, USP, revenue model, investments required, and marketing strategy. Students will be judged based on these parameters, along with any other relevant points they include.",
     "details1": [
-      "Number of students in a team: 2",
-      "The problem statement is open to innovation."
+      "Team size: 2 students",
+      "Open problem statement for innovation"
     ],
     "details2": [
       {
-        "heading": "ROUND 1: IDEA SUBMISSION ",
+        "heading": "ROUND 1: IDEA SUBMISSION",
         "points": [
-          "This will be a submission round. All teams must submit their business idea in PPT format.",
-          "Maximum number of slides permitted is 10 (Exclusive of Cover Page)",
+          "This will be a submission round. All teams must submit their business ideas in PPT format.",
+          "Maximum number of slides permitted is 10 (Exclusive of Cover Page).",
           "Top 10 teams will advance to the next round."
         ]
       },
@@ -19,131 +19,67 @@
         "points": [
           "Selected teams from Round 1 will pitch their ideas before the judges.",
           "Time limit of the presentation is 20 minutes.",
-          "Presentation will be followed with question by the judges."
+          "Presentation will be followed by questions from the judges."
         ]
       }
     ],
-    "eh": ["Amit Kumar Poddar:8873503289", "Saurav Kumar Jaiswal:7361832490"],
+    "eh": ["Amit Kumar Poddar", "Saurav Kumar Jaiswal"],
     "prize": "8000",
     "name": "Elevator Pitch",
-    "img": "/events/elevator-pitch.webp"
+    "img": "/events/elevator-pitch.jpg"
   },
   "quiriosity": {
-    "desc": "India is emerging as a world leader in the field of innovation, and new age start-ups are the forerunners of this development. This year's Quriosity will focus on start-ups. To all the quiz geeks out there, brace yourself and be ready for your quizzing mettle to be tested. It is time to compete with the finest brains of the institute and enrich your quizzing skills. QURIOSITY provides a platform to explore the charm of science and technology. To come up as a winner, you need to possess noetic and quick thinking.",
+    "desc": "A prototype is a crucial element in the design and development process. This year's Quriosity will be on Protoverse. To all the quiz geeks out there, brace yourself and be ready for your quizzing mettle to be tested. It is the time to compete with the finest brains of the institute and enrich your quizzing skills. QURIOSITY provides a platform to explore the charm of science and technology. To come up as a winner, you need to possess noetic and quick thinking.",
     "details1": ["Number of students in a team: 2"],
     "details2": [
       {
-        "heading": "Round 1",
-        "points": ["Pen and paper based preliminary test"]
+        "heading": "ROUND 1",
+        "points": ["Pen and paper-based preliminary test"]
       },
       {
         "heading": "ROUND 2",
         "points": [
-          "6 Teams will be selected on-spot from the prelims for the final quiz competition"
+          "6 Teams will be selected on-spot from the prelims for the final quiz competition."
         ]
       }
     ],
-    "eh": ["Ritika Somya:9955710265", "Vinisha Komali:9542949166"],
+    "eh": ["Ritika Somya", "Vinisha Komali"],
     "prize": "6000",
     "name": "QURIOSITY",
-    "img": "/events/quriosity.webp"
-  },
-  "placestation": {
-    "desc": "Do you consider yourself an all-rounder? Do you have a unique way of accomplishing goals? Do you stand out in a crowd? Come enter this corporate labyrinth, where one can live and experience the nerve-wracking placement session in a real time dynamic environment with a series of stations comprising of the comprehensive written test, expressive group discussion as you make your way through the maze to the final round which is the personal interview. It’s an all round competitive event with a motive to guide the students about campus placements and at the same time select the best. So if you think you’ve got what it takes to make a mark, then do come and be a part of this grand event",
-    "details1":[],
-    "details2": [
-      {
-        "heading": "Round 1",
-        "points": [
-          "Written Test involving aptitude, logical reasoning and technical questions. (Core and Analytics)",
-          "Written Test involving aptitude, logical reasoning and coding questions (SDE)"
-        ]
-      },
-      {
-        "heading": "Round 2",
-        "points": [
-          "Group Discussion on practical and abstract topics (Core)",
-          "Personal Interview - Technical (Analytics and SDE)"
-        ]
-      },
-      {
-        "heading": "Round 3",
-        "points": [
-          "Personal Interview – Technical and HR (Core)",
-          "Personal Interview – HR (Analytics and SDE)"
-        ]
-      }
-    ],
-    "eh": [
-      "Gourav Kumar(analytics):9123299859",
-      "Aniket Kumar Thakur(analytics):9749168781",
-      "Vaibhav Kumar Mishra (core):9508865543",
-      "Somil Gupta(core):8303650385",
-      "Shekhar Suman(core):9818036539",
-      "Amrit Shukla(SDE):7905815254",
-      "Shubham TIwary(SDE):9973663241"
-    ],
-    "prize": "4500",
-    "name": "PLACE STATION",
-    "img": "/events/place-station.webp"
-  },
-  "assemblage": {
-    "desc": "Strength of mechanical models and engineering structures is an important area of study and experimentation. Concept and principles dealing with truss systems, beam loadings, stress-strain calculation and representation are imperative for evaluating the failure point of structures. Also, the knowledge of material science and vibration is essential to understand the mechanical behaviors and dynamics of system under consideration. This event deals with fabrication of a bridge model and its strength testing using varied type of loads.",
-    "details1": [
-      "Number of students in a team: 3",
-      "The team has to construct a bridge model",
-      "Required materials will be provided on-spot",
-      "The structure will be tested under loads of different nature and value and corresponding points will be awarded"
-    ],
-    "details2": [
-      {
-        "heading": "Round 1",
-        "points": ["Written test on related concepts"]
-      },
-      {
-        "heading": "Round 2",
-        "points": [
-          "Conceptual Design submission, Bridge Model construction, Strength Testing."
-        ]
-      }
-    ],
-    "eh": ["Yuvraj Singh Shekhawat:9460772431", "Rupesh Kumar:7667507350"],
-    "prize": "6000",
-    "name": "ASSEMBLAGE",
-    "img": "/events/assemblage.webp"
+    "img": "/events/quriosity.jpg"
   },
   "dictumSymposium": {
-    "desc": "Greatest quality of a leader is wisdom of opinion and way of expression. COGNITIO ’24 brings you the opportunity to get into the war of words. Buckle up, for this is the event you craved for. Let your larynx vibrate and your words echo the whole house. DICTUM SYMPOSIUM brings all of you the experience of speaking as a leader. The event deals with expression of opinion/defending your stand on corporate issues by highlighting its social, economic, environmental and technical impacts.",
+    "desc": "Greatest quality of a leader is wisdom of opinion and way of expression. COGNITIO '25 brings you the opportunity to get into the war of words. Buckle up, for this is the event you craved for. Let your larynx vibrate and your words echo the whole house. DICTUM SYMPOSIUM brings all of you the experience of speaking as a leader. The event deals with expression of opinion/defending your stand on corporate issues by highlighting its social, economic, environmental, and technical impacts.",
     "details1": ["Number of students in a team: 2"],
     "details2": [
       {
-        "heading": "Round 1",
+        "heading": "ROUND 1: ABSTRACT SUBMISSION",
         "points": [
-          "Abstract submission describing your views on one of the prescribed topics"
+          "Describing your views on one of the prescribed topics."
         ]
       },
       {
-        "heading": "Round 2",
+        "heading": "ROUND 2: EXTEMPORE TOPICS",
         "points": [
-          "Extempore- Topics will be provided on spot and the team members have to present their views on the same."
+          "Topics will be provided on spot and the team members have to present their views on the same."
         ]
       },
       {
-        "heading": "Round 3",
+        "heading": "ROUND 3: DEBATE",
         "points": [
-          "Debate- Topics will be provided beforehand. 2 teams have to debate with each other with the members of each team speaking alternatively"
+          "Topics will be provided beforehand. 2 teams have to debate with each other with the members of each team speaking alternatively."
         ]
       }
     ],
     "eh": [
-      "Alisha Kumari:9297851021",
-      "Pratibha Mitra:9065807147",
-      "Prachi Singh:9570936793",
-      "Jyoti Kumari:6205729896"
+      "Alisha Kumari",
+      "Pratibha Mitra",
+      "Prachi Singh",
+      "Jyoti Kumari"
     ],
     "prize": "4500",
     "name": "DICTUM SYMPOSIUM",
-    "img": "/events/dictum-symposium.webp"
+    "img": "/events/dictum-symposium.jpg"
   },
   "sas": {
     "desc": "Propulsion systems are highly powerful driving technologies enabling the physical essence of distant places. The event deals with water propulsion system in rocket technology resulting in a working prototype showcasing the application of physical concepts. Put all your concepts of kinematics, aerodynamics & hydraulics to build a Water Rocket that covers the maximum range.",
@@ -151,26 +87,68 @@
       "Number of students in a team: 3",
       "Materials required to build Water Rocket will have to be brought by participants.",
       "The team members will have to launch their Water Rocket themselves under the supervision of the event coordinators.",
-      "The participants will get three chances to launch their model.",
-      "The maximum range covered out of the three will be taken for consideration."
+      "The participants will get three chances to launch their model. The maximum range covered out of the three will be taken for consideration."
     ],
     "details2": [
       {
-        "heading": "Round 1",
-        "points": ["Written Test involving related physical concepts."]
+        "heading": "ROUND 1: WORKSHOP + DESIGN IT!",
+        "points": [
+          "Participants will use industry-standard software like CATIA or SolidWorks to create a unique and functional design based on the problem statement provided. Also, there will be a workshop held about it. Creativity, precision, and adherence to design requirements will be evaluated in this phase."
+        ]
       },
       {
-        "heading": "Round 2",
-        "points": ["Model making followed by Field launching."]
+        "heading": "ROUND 2: SIMULATE IT!",
+        "points": [
+          "The design created in Round 1 will be tested in a virtual environment using ANSYS simulation software. Participants must analyze the structural integrity, thermal performance, or other relevant parameters of their designs. The goal is to optimize the design for real-world challenges.",
+          "Top 6 teams will advance to Round 3 i.e. final round."
+        ]
+      },
+      {
+        "heading": "ROUND 3: PROTOTYPE IT!",
+        "points": [
+          "The final and most thrilling round involves transforming your virtual design into a tangible model using 3D printing. Participants will showcase their prototypes and explain how they align with the competition's goals. The best-performing prototype, judged on innovation, functionality, and quality, will claim the title of Protoverse Champion."
+        ]
       }
     ],
-    "eh": ["Cherag Prajwal:6204003259"],
+    "eh": ["Cherag Prajwal"],
     "prize": "6000",
     "name": "SHOOT at SIGHT",
-    "img": "/events/shoot-at-sight.webp"
+    "img": "/events/shoot-at-sight.jpg"
+  },
+  "protoverse": {
+    "desc": "Step into the exciting world of design, simulation, and innovation with Protoverse, an engaging competition that challenges participants to unleash their creativity and technical skills. This three-round event tests your expertise in CAD software, engineering simulations, and rapid prototyping to determine the ultimate design innovator.",
+    "details1": [
+      "All should bring their own laptop with charger and extension cord.",
+      "Teams can consist of 2 members."
+    ],
+    "details2": [
+      {
+        "heading": "ROUND 1: WORKSHOP + DESIGN IT!",
+        "points": [
+          "Participants will use industry-standard software like CATIA or SolidWorks to create a unique and functional design based on the problem statement provided. Also, there will be a workshop held about it. Creativity, precision, and adherence to design requirements will be evaluated in this phase."
+        ]
+      },
+      {
+        "heading": "ROUND 2: SIMULATE IT!",
+        "points": [
+          "The design created in Round 1 will be tested in a virtual environment using ANSYS simulation software. Participants must analyze the structural integrity, thermal performance, or other relevant parameters of their designs. The goal is to optimize the design for real-world challenges.",
+          "Top 6 teams will advance to Round 3 i.e. final round."
+        ]
+      },
+      {
+        "heading": "ROUND 3: PROTOTYPE IT!",
+        "points": [
+          "The final and most thrilling round involves transforming your virtual design into a tangible model using 3D printing. Participants will showcase their prototypes and explain how they align with the competition's goals. The best-performing prototype, judged on innovation, functionality, and quality, will claim the title of Protoverse Champion."
+        ]
+      }
+    ],
+    "eh": ["Cherag Prajwal"],
+    "prize": "6000",
+    "name": "PROTOVERSE",
+    "img": "/events/protoverse.jpg"
   },
   "os": {
-    "desc": "Cognitio’24 isn’t just limited to technical and managerial events. It also promotes the cultural aspect of a student’s life. Open Stage will ensure that none of your expectations goes unfulfilled. Be ready to be mesmerized by the performances of your batchmates. The stage is all yours!",
+    "desc": "Cognitio 25 isn't just limited to technical and managerial events. It also promotes the cultural aspect of a student's life. Open Stage will ensure that none of your expectations goes unfulfilled. Be ready to be mesmerized by the performances of your batchmates. The stage is all yours!",
     "details1": [
       "Students can participate either individually or as a team.",
       "Students can show any kind of talent like singing, dancing, shayari, rapping, etc.",
@@ -178,73 +156,129 @@
       "Winners will be decided based on judges’ scores and audience votes.",
       "The event will only be of one round."
     ],
-    "details2":[],
-    "eh": ["Nitish Kumar:6203348491", "Abhay:7050013639"],
+    "details2": [],
+    "eh": ["Nitish Kumar", "Abhay"],
     "prize": "4500",
     "name": "OPEN STAGE",
-    "img": "/events/open-stage.webp"
+    "img": "/events/open-stage.png"
   },
-  "roboWar": {
-    "desc": "For COGNITIO 24 we propose an exhilarating Robo War event that spans across three engaging rounds, challenging students to unleash their creativity, innovation, and engineering prowess. The event is designed to foster teamwork, problem-solving skills, and hands-on experience in building and battling robots.",
-    "details1": [],
+  "assemblage": {
+    "desc": "Strength of mechanical models and engineering structures is an important area of study and experimentation. Concept and principles dealing with truss systems, beam loadings, stress-strain calculation and representation are imperative for evaluating the failure point of structures. Also, the knowledge of material science and vibration is essential to understand the mechanical behaviors and dynamics of the system under consideration. This event deals with fabrication of a bridge model and its strength testing using varied types of loads.",
+    "details1": [
+      "Number of students in a team: 3",
+      "The team has to construct a bridge model.",
+      "Required materials will be provided on spot.",
+      "The structure will be tested under loads of different nature and value and corresponding points will be awarded."
+    ],
     "details2": [
       {
-        "heading": "Round 1: Hands on Workshop",
-        "points": [
-          "In first round of the competition, participants will form a team of four students and will attend a workshop where teams in a controlled environment will learn to construct a basic robot and implement a preliminary attacking mechanism. The workshop not only equips participants with essential building skills but also allows them to fine-tune their designs based on practical considerations. After that a quiz will be conducted based on workshop. The performance of the team in quiz will be marked."
-        ]
+        "heading": "ROUND 1",
+        "points": ["Written test on related concepts"]
       },
       {
-        "heading": "Round 2: Idea Submission",
+        "heading": "ROUND 2",
         "points": [
-          "In second round of the competition, team will have to showcase their conceptualization skills by creating a design for their robots. This round encourages the use of designing software like Autocad, Solidwork etc, but if they do not know to use the software they can simply sketch it on chart paper, in order to just express their rough idea. Teams must submit their design blueprints, including the robot's structure, dimensions, and a brief description of its attacking mechanism before 16th January.",
-          "The top 15 best performing team in round 1 and 2 will be provided robotics kit free of cost but participation certificate will be provided to all students who will attend workshop. Rest Team will have to construct robot on their own expense to compete in final round. For final round team can be allowed to make changes in their robots."
-        ]
-      },
-      {
-        "heading": "Round 3: The Final Showdown",
-        "points": [
-          "The final round is the pinnacle of the Robo War event, where teams will pit their robots against each other in a thrilling combat arena. Teams are required to adhere to specified robot dimensions and guidelines provided during the design submission phase. The combat will be a test of strategy, engineering, and teamwork, with the last robot standing declared the ultimate winner."
-        ]
-      },
-      {
-        "heading": "Robot Specifications and General Rules",
-        "points": [
-          "Permissible weight: Maximum 3 kg including power equipment e.g. batteries, adapters etc.",
-          "Maximum permissible volume. Fully unfolded robot must be within the limits of 40 cm X 30cm X30 cm (l x b x h).",
-          "Robots can have weapons such as cutters, flippers, saws, lifting devices, spinning hammers etc. Use of liquid projectiles, any kind of inflammable liquid, flame-based weapons, radio jamming devices, high power magnets or electromagnets, are not permitted.",
-          "Use of IC Engines is not allowed.",
-          "We will provide on-site power points of 230 V AC. Participating teams need to bring their own adapters/converters (with a maximum output voltage of 12V DC) to avail AC supply.",
-          "In case of batteries, maximum allowed voltage is 12 V DC.",
-          "Each team can have maximum four members. Students from different branches can form a team.",
-          "Robots will be inspected for safety and reliability before being allowed to compete.",
-          "Disrupting opponent’s power is not allowed.",
-          "Arena is a 9 ft. X 6 ft. platform.",
-          "Organizers reserve the right to ban/disqualify any robot at any point of time, due to safety or any other reason.",
-          "ROBOWAR organizing team have reserves the right to disqualify any participant who fails to adhere to the below mentioned game rules."
-        ]
-      },
-      {
-        "heading": "Game Rules",
-        "points": [
-          "The competition will be played on a knock-out basis consisting of 2 players at a time.",
-          "The maximum duration of each War/Fight will be 5 minutes.",
-          "The robot will win if the robot successfully immobilizes the opponent or through it out of the arena.",
-          "If within 5 minutes if neither of the robot is knocked out then they will be judged by following criteria:",
-          "Aggression-Aggression is judged by the frequency, severity, boldness and effectiveness of attacks deliberately initiated by the robot against its opponent. If a robot appears to have accidentally attacked an opponent, that act will not be considered Aggression.",
-          "Control-Control means a robot can attack an opponent at its weakest point, use its weapons in the most effective way, and minimize the damage caused by the opponent or its weapons.",
-          "Damage-Through deliberate action, a robot either directly or indirectly reduces the functionality, effectiveness or defensibility of an opponent. Damage is not considered relevant if a robot inadvertently harms itself. Also, if a pressure vessel or a rapidly spinning the device on a robot fragments, any damage to the opponent will not be considered 'deliberate'.",
-          "Strategy -The robot exhibits a combat plan that exploits the robot's strengths against the weaknesses of its opponent. Strategy is also defined as a robot exhibiting a deliberate.",
-          "Match will be interrupted if communication between robot and operator breaks.",
-          "No member will be allowed to enter in the war zone without permission of coordinators.",
-          "The organizers reserve the rights to change any or all of the above rules as they deem fit.",
-          "Violation of any the above rules will lead to disqualification."
+          "Conceptual Design submission, Bridge Model construction, Strength Testing."
         ]
       }
     ],
-    "eh": ["Ritu Kumari:9471113952", "Shivam Kumar:7870417743"],
-    "prize": "",
-    "name": "ROBO WAR",
-    "img": "/events/robo-war.webp"
+    "eh": ["Yuvraj Singh Shekhawat", "Rupesh Kumar"],
+    "prize": "6000",
+    "name": "ASSEMBLAGE",
+    "img": "/events/assemblage.jpg"
+  },
+  "rowBoatics": {
+    "desc": "The event spans across 2 rounds, a design submission round and a boat race. The event challenges students to unleash their creativity, innovations, and hands-on experience. A maximum of 4 students are allowed per team. Students may be from different branches and across multiple years.",
+    "details1": [
+      "Number of students in a team: 4",
+      "The boat must be able to show clear translational motion in all directions.",
+      "The boat has to start from one corner of the arena and traverse to the other corner, avoiding the arena walls and hazards.",
+      "While doing so, the boat also has to pick up 3 floating items placed in the path.",
+      "At the finish point, the payload must be dropped in the marked area.",
+      "The maximum system voltage should be 12.6V. The boat must be able to carry a payload of at least 80g. The boat itself excluding the payload cannot weigh over 800g."
+    ],
+    "details2": [
+      {
+        "heading": "ROUND 1: ABSTRACT SUBMISSION",
+        "points": [
+          "A design report of the boat is to be submitted which states how the boat solves the given problem statement. The mechanisms used must be stated clearly. An electrical diagram is also required. Any novel ideas if used, also must be stated. Teams who get selected for the first round will move on to Round 2 where they build their boats and compete in the race."
+        ]
+      },
+      {
+        "heading": "ROUND 2: BOAT RACE",
+        "points": [
+          "An arena will be built for the boats. The criteria for winning is time. The boat which completes the given task in the shortest time is declared the winner. The arena will be a water tank of dimensions 15ft by 8ft with a depth of 3ft. Arena layout will be revealed on the spot of the event. There will be one arena hazard with a whirlpool in the middle. If 2 teams have the same time, the event organizers will decide the winner based on maneuverability and control."
+        ]
+      }
+    ],
+    "eh": ["Yuvraj Singh Shekhawat", "Rupesh Kumar"],
+    "prize": "6000",
+    "name": "ROW-BOAT-ICS",
+    "img": "/events/row-boatics.jpg"
+  },
+  "placestation": {
+    "desc": "Do you consider yourself an all-rounder? Do you have a unique way of accomplishing goals? Do you stand out in a crowd? Come enter this corporate labyrinth, where one can live and experience the nerve-wracking placement session in a real-time dynamic environment with a series of stations comprising of the comprehensive written test, expressive group discussion as you make your way through the maze to the final round which is the personal interview. It's an all-round competitive event with a motive to guide the students about campus placements and at the same time select the best. So if you think you've got what it takes to make a mark, then do come and be a part of this grand event.",
+    "details1": [],
+    "details2": [
+      {
+        "heading": "ROUND 1",
+        "points": [
+          "Written Test involving aptitude, logical reasoning, and technical questions. (Core and Analytics)",
+          "Written Test involving aptitude, logical reasoning, and coding questions. (SDE)"
+        ]
+      },
+      {
+        "heading": "ROUND 2",
+        "points": [
+          "Group Discussion on practical and abstract topics (Core)",
+          "Personal Interview - Technical (Analytics and SDE)"
+        ]
+      },
+      {
+        "heading": "ROUND 3",
+        "points": [
+          "Personal Interview – Technical and HR (Core)",
+          "Personal Interview – HR (Analytics and SDE)"
+        ]
+      }
+    ],
+    "eh": [
+      "Gourav Kumar (Analytics)",
+      "Aniket Kumar Thakur (Analytics)",
+      "Vaibhav Kumar Mishra (Core)",
+      "Somil Gupta (Core)",
+      "Shekhar Suman (Core)",
+      "Amrit Shukla (SDE)",
+      "Shubham Tiwary (SDE)"
+    ],
+    "prize": "4500",
+    "name": "PLACE STATION",
+    "img": "/events/place-station.jpg"
+  },
+  "sellAthon": {
+    "desc": "Sale-a-Thon is a thrilling event designed to test your creativity, persuasion skills, and entrepreneurial spirit. Participants will be challenged to turn seemingly useless items into sellable treasures!",
+    "details1": [
+      "Participants can compete individually or in teams of 2 members.",
+      "Collaboration and innovative thinking are encouraged."
+    ],
+    "details2": [
+      {
+        "heading": "Round Format",
+        "points": [
+          "Each participant/team will be given a random item such as an old calendar, broken clock, or any other unconventional material. The goal is to market and sell the item creatively to a hypothetical or real customer.",
+          "A one-page PPT can be prepared to enhance your pitch, but it is not mandatory. The focus is on verbal skills and convincing power."
+        ]
+      },
+      {
+        "heading": "Winning Criteria",
+        "points": [
+          "The participant/team that successfully sells their item or demonstrates the best sales pitch will be declared the winner."
+        ]
+      }
+    ],
+    "eh": ["Nitish Kumar", "Abhay"],
+    "prize": "4500",
+    "name": "SELL-A-THON",
+    "img": "/events/sell-a-thon.jpg"
   }
 }
