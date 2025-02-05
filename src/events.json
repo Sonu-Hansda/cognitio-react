@@ -23,7 +23,7 @@
         ]
       }
     ],
-    "eh": ["Amit Kumar Poddar", "Saurav Kumar Jaiswal"],
+    "eh": ["Divyanshu","Aman Mani Jha"],
     "prize": "8000",
     "name": "Elevator Pitch",
     "img": "/events/elevator-pitch.jpg"
@@ -43,7 +43,7 @@
         ]
       }
     ],
-    "eh": ["Ritika Somya", "Vinisha Komali"],
+    "eh": ["Faizan","Piyush"],
     "prize": "6000",
     "name": "QURIOSITY",
     "img": "/events/quriosity.jpg"
@@ -72,10 +72,9 @@
       }
     ],
     "eh": [
-      "Alisha Kumari",
-      "Pratibha Mitra",
-      "Prachi Singh",
-      "Jyoti Kumari"
+     "Ayushi",
+     "Amit",
+     "Khushi"
     ],
     "prize": "4500",
     "name": "DICTUM SYMPOSIUM",
@@ -110,7 +109,12 @@
         ]
       }
     ],
-    "eh": ["Cherag Prajwal"],
+    "eh": [
+      "Adarsh",
+      "Vikash",
+      "Nikhil",
+      "Shubham"
+    ],
     "prize": "6000",
     "name": "SHOOT at SIGHT",
     "img": "/events/shoot-at-sight.jpg"
@@ -142,7 +146,10 @@
         ]
       }
     ],
-    "eh": ["Cherag Prajwal"],
+    "eh": [
+      "Sougandha",
+      "Aditya Aryan"
+    ],
     "prize": "6000",
     "name": "PROTOVERSE",
     "img": "/events/protoverse.jpg"
@@ -157,7 +164,7 @@
       "The event will only be of one round."
     ],
     "details2": [],
-    "eh": ["Nitish Kumar", "Abhay"],
+    "eh": ["Aman Utkarsh"],
     "prize": "4500",
     "name": "OPEN STAGE",
     "img": "/events/open-stage.png"
@@ -182,7 +189,12 @@
         ]
       }
     ],
-    "eh": ["Yuvraj Singh Shekhawat", "Rupesh Kumar"],
+    "eh": [
+      "Nikhil",
+      "Shubham",
+      "Pritish",
+      "Vikash"
+    ],
     "prize": "6000",
     "name": "ASSEMBLAGE",
     "img": "/events/assemblage.jpg"
@@ -211,7 +223,10 @@
         ]
       }
     ],
-    "eh": ["Yuvraj Singh Shekhawat", "Rupesh Kumar"],
+    "eh": [
+      "Aditya Aryan",
+      "Aditya Priyadarshi"
+    ],
     "prize": "6000",
     "name": "ROW-BOAT-ICS",
     "img": "/events/row-boatics.jpg"
@@ -243,13 +258,16 @@
       }
     ],
     "eh": [
-      "Gourav Kumar (Analytics)",
-      "Aniket Kumar Thakur (Analytics)",
-      "Vaibhav Kumar Mishra (Core)",
-      "Somil Gupta (Core)",
-      "Shekhar Suman (Core)",
-      "Amrit Shukla (SDE)",
-      "Shubham Tiwary (SDE)"
+      "Manish (DA)",
+      "Divyanshu (DA)",
+      "Aman Mani Jha (DA)",
+      "Amar (Core)",
+      "Astha (Core)",
+      "Aditya Raj (Core)",
+      "Rohan (Core)",
+     "Shaket (SDE)",
+     "Sanyasi (SDE)",
+     "Aman Utkarsh (SDE)"
     ],
     "prize": "4500",
     "name": "PLACE STATION",
@@ -276,7 +294,7 @@
         ]
       }
     ],
-    "eh": ["Nitish Kumar", "Abhay"],
+    "eh": ["Divyanshu", "Aman Mani Jha"],
     "prize": "4500",
     "name": "SELL-A-THON",
     "img": "/events/sell-a-thon.jpg"
