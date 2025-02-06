@@ -11,7 +11,7 @@ const Contact = () => {
               <div>
                 <h6 className="text-lg font-semibold">Phone</h6>
                 <p className="text-gray-300 hover:text-indigo-500 transition-colors duration-300">
-                  <a href="tel:+916203348491">6203348491</a>
+                  Arshit:<a href="tel:+919060749085">9060749085</a>
                 </p>
               </div>
               <div>
