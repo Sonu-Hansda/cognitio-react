@@ -70,7 +70,7 @@ function App() {
         </section>
 
         <Modal isOpen={isModalOpen} onClose={handleCloseModal}>
-          <Register />
+          <Register onClose={handleCloseModal} />
         </Modal>
       </main>
 

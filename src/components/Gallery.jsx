@@ -1,4 +1,10 @@
 import React from 'react';
+import ImageNew1 from "../assets/imgs/images/1.jpg";
+import ImageNew2 from "../assets/imgs/images/2.jpg";
+import ImageNew3 from "../assets/imgs/images/3.jpg";
+import ImageNew4 from "../assets/imgs/images/4.jpg";
+import ImageNew5 from "../assets/imgs/images/5.jpg";
+import ImageNew6 from "../assets/imgs/images/6.jpg";
 import Image1 from "../assets/imgs/images/1.webp";
 import Image2 from "../assets/imgs/images/2.webp";
 import Image3 from "../assets/imgs/images/3.webp";
@@ -14,6 +20,12 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const images = [
+    { src: ImageNew1, alt: 'New Gallery Image 1' },
+    { src: ImageNew2, alt: 'New Gallery Image 2' },
+    { src: ImageNew3, alt: 'New Gallery Image 3' },
+    { src: ImageNew4, alt: 'New Gallery Image 4' },
+    { src: ImageNew5, alt: 'New Gallery Image 5' },
+    { src: ImageNew6, alt: 'New Gallery Image 6' },
     { src: Image1, alt: 'Gallery Image 1' },
     { src: Image2, alt: 'Gallery Image 2' },
     { src: Image3, alt: 'Gallery Image 3' },

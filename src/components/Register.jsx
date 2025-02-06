@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Register = () => {
+const Register = ({ onClose }) => {
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -8,10 +8,10 @@ const Register = () => {
         email: "",
         branch: "",
         events: [],
-        paymentReceipt: "",
     });
 
     const [errors, setErrors] = useState({});
+    const [loading, setLoading] = useState(false);
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -36,34 +36,68 @@ const Register = () => {
 
     const validateForm = () => {
         const newErrors = {};
+
         if (!formData.firstName.trim()) newErrors.firstName = "First Name is required";
+
         if (!formData.lastName.trim()) newErrors.lastName = "Last Name is required";
-        if (!formData.registrationNumber.trim())
+
+        const registrationNumberPattern = /^(202[1-4])[A-Za-z]{2}[A-Za-z]{2}\d{3}$/;
+        if (!formData.registrationNumber.trim().toUpperCase()) {
             newErrors.registrationNumber = "Registration Number is required";
-        if (!formData.email.trim()) newErrors.email = "Email is required";
-        else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(formData.email))
-            newErrors.email = "Invalid email address";
+        } else if (!registrationNumberPattern.test(formData.registrationNumber)) {
+            newErrors.registrationNumber = "Invalid Registration Number";
+        }
+
+        const emailPattern = /^[0-9]{4}[A-Za-z]{2}[a-zA-Z]{2}\d{3}@nitjsr\.ac\.in$/i;
+        if (!formData.email.trim()) {
+            newErrors.email = "Email is required";
+        } else if (!emailPattern.test(formData.email)) {
+            newErrors.email = "Please use your college email";
+        }
+
         if (!formData.branch) newErrors.branch = "Branch is required";
+
         if (formData.events.length === 0) newErrors.events = "Select at least one event";
 
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (validateForm()) {
-            console.log("Form Data:", formData);
-            alert("Registration Successful!");
-            setFormData({
-                firstName: "",
-                lastName: "",
-                registrationNumber: "",
-                email: "",
-                branch: "",
-                events: [],
-                paymentReceipt: "",
-            });
+            try {
+                setLoading(true);
+                const response = await fetch(import.meta.env.VITE_FORMSPREE_ENDPOINT, {
+                    method: "POST",
+                    headers: {
+                        "Accept": "application/json",
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(formData),
+                });
+
+                if (response.ok) {
+                    alert("Registration Successful!");
+                    setFormData({
+                        firstName: "",
+                        lastName: "",
+                        registrationNumber: "",
+                        email: "",
+                        branch: "",
+                        events: [],
+                    });
+                    onClose();
+                } else {
+                    const errorData = await response.json();
+                    alert("There was a problem with your submission: " + errorData.errors[0].message);
+                }
+            } catch (error) {
+                console.error("Error submitting form:", error);
+                alert("There was a problem submitting your form. Please try again later.");
+            } finally {
+                setLoading(false);
+            }
         }
     };
 
@@ -181,8 +215,9 @@ const Register = () => {
                 <button
                     type="submit"
                     className="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700 transition focus:outline-none focus:ring-2 focus:ring-indigo-500"
+                    disabled={loading}
                 >
-                    Register
+                    {loading ? "Submitting..." : "Register"}
                 </button>
             </form>
         </div>
