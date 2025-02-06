@@ -162,7 +162,7 @@ const Register = () => {
                 <div>
                     <h3 className="block text-sm font-medium text-gray-700 mb-2">Select Events:</h3>
                     <div className="space-y-2">
-                        {["Elevator Pitch", "Quriosity", "Assemblage", "PLACE STATION", "ASSEMBLAGE", "DICTUM SYMPOSIUM", "SHOOT at SIGHT"].map((event) => (
+                        {["Elevator Pitch", "Quriosity", "Assemblage", "Place Station", "Dictum Symposium", "Shoot at Sight", "Protoverse", "Row-Boat-Ics", "Sell-a-Thon", "Open Stage"].map((event) => (
                             <label key={event} className="flex items-center space-x-2">
                                 <input
                                     type="checkbox"
@@ -176,24 +176,6 @@ const Register = () => {
                         ))}
                     </div>
                     {errors.events && <p className="text-red-500 text-sm mt-1">{errors.events}</p>}
-                </div>
-
-                <div>
-                    <label className="block text-sm font-medium text-gray-700">
-                        Payment Receipt Number
-                    </label>
-                    <input
-                        type="text"
-                        name="paymentReceipt"
-                        placeholder="Payment Receipt Number"
-                        value={formData.paymentReceipt}
-                        onChange={handleChange}
-                        className={`w-full p-2 border ${errors.paymentReceipt ? "border-red-500" : "border-gray-300"
-                            } rounded focus:outline-none focus:ring-2 focus:ring-indigo-500`}
-                    />
-                    {errors.paymentReceipt && (
-                        <p className="text-red-500 text-sm mt-1">{errors.paymentReceipt}</p>
-                    )}
                 </div>
 
                 <button
