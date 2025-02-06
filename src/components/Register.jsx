@@ -62,42 +62,57 @@ const Register = ({ onClose }) => {
         setErrors(newErrors);
         return Object.keys(newErrors).length === 0;
     };
-
     const handleSubmit = async (e) => {
         e.preventDefault();
         if (validateForm()) {
-            try {
-                setLoading(true);
-                const response = await fetch(import.meta.env.VITE_FORMSPREE_ENDPOINT, {
-                    method: "POST",
-                    headers: {
-                        "Accept": "application/json",
-                        "Content-Type": "application/json",
-                    },
-                    body: JSON.stringify(formData),
-                });
-
-                if (response.ok) {
-                    alert("Registration Successful!");
-                    setFormData({
-                        firstName: "",
-                        lastName: "",
-                        registrationNumber: "",
-                        email: "",
-                        branch: "",
-                        events: [],
+            
+            setLoading(true);
+            const urls = [
+                process.env.REACT_APP_FORMSPREE_URL,
+                process.env.REACT_APP_FORMSPREE_URL_2,
+                process.env.REACT_APP_FORMSPREE_URL_3,
+            ];
+    
+            let submissionSuccessful = false;
+    
+            for (const url of urls) {
+                try {
+                    const response = await fetch(url, {
+                        method: "POST",
+                        headers: {
+                            "Accept": "application/json",
+                            "Content-Type": "application/json",
+                        },
+                        body: JSON.stringify(formData),
                     });
-                    onClose();
-                } else {
-                    const errorData = await response.json();
-                    alert("There was a problem with your submission: " + errorData.errors[0].message);
+    
+                    if (response.ok) {
+                        alert("Registration Successful!");
+                        setFormData({
+                            firstName: "",
+                            lastName: "",
+                            registrationNumber: "",
+                            email: "",
+                            branch: "",
+                            events: [],
+                        });
+                        onClose();
+                        submissionSuccessful = true;
+                        break;
+                    } else {
+                        const errorData = await response.json();
+                        console.error("Submission failed:", errorData.errors[0].message);
+                    }
+                } catch (error) {
+                    console.error("Error submitting form:", error);
                 }
-            } catch (error) {
-                console.error("Error submitting form:", error);
-                alert("There was a problem submitting your form. Please try again later.");
-            } finally {
-                setLoading(false);
             }
+    
+            if (!submissionSuccessful) {
+                alert("All submissions failed. Please try again later.");
+            }
+    
+            setLoading(false);
         }
     };
 
