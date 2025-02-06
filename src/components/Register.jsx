@@ -68,9 +68,9 @@ const Register = ({ onClose }) => {
             
             setLoading(true);
             const urls = [
-                process.env.REACT_APP_FORMSPREE_URL,
-                process.env.REACT_APP_FORMSPREE_URL_2,
-                process.env.REACT_APP_FORMSPREE_URL_3,
+                import.meta.env.VITE_FORMSPREE_ENDPOINT,
+                import.meta.env.VITE_FORMSPREE_ENDPOINT_2,
+                import.meta.env.VITE_FORMSPREE_ENDPOINT_3,
             ];
     
             let submissionSuccessful = false;
@@ -197,7 +197,7 @@ const Register = ({ onClose }) => {
                     >
                         <option value="">Select Branch</option>
                         <option value="ME">Mechanical Engineering</option>
-                        <option value="ECM">Engineering & Computational Mechanics</option>
+                        <option value="ECM">Engineering & Computational Engineering</option>
                         <option value="CSE">Computer Science & Engineering</option>
                         <option value="EE">Electrical Engineering</option>
                         <option value="ECE">Electronics & Communication Engineering</option>
