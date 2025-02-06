@@ -197,7 +197,7 @@ const Register = ({ onClose }) => {
                     >
                         <option value="">Select Branch</option>
                         <option value="ME">Mechanical Engineering</option>
-                        <option value="ECM">Engineering & Computational Engineering</option>
+                        <option value="ECM">Engineering & Computational Mechanics</option>
                         <option value="CSE">Computer Science & Engineering</option>
                         <option value="EE">Electrical Engineering</option>
                         <option value="ECE">Electronics & Communication Engineering</option>
